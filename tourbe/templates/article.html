@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+
+<style>
+.row{
+font-family : Verdana, Verdana, Geneva, sans-serif;}
+p{
+top: 150px;}
+a{
+	color: black;
+	font-size: 1.5em;
+	font-family: cursive;
+	}
+</style>
+<div class="row">
+ <div class="col-md-8">
+<a href="/">Retour</a>
+  <h1>{{ article.title }}</h1>
+  <label>mise en ligne le {{ article.date|strftime('%d %B %Y') }}</label><p>
+  {{ article.content }}</p>
+ </div>
+</div>
+{% endblock %}
