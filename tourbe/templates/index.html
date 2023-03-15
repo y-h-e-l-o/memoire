@@ -5,42 +5,34 @@
 {% block content %}
 <style>h1{
 	position: relative;
-	color : #D9E27D;
+	color : #800080;
 	font-family : cursive;
 	font-size: 2em;
-	text-shadow: #666717 4px 3px 5px;
 	text-align: center;
 	margin: 20px 0 0 0 ;
 }
 .article, a{
-	padding-top: 10px;
-	position: relative;
+	padding: 10px;
 	font-family : Verdana, Verdana, Geneva, sans-serif;
 	font-size : 1em;
 	color: black;
 	text-align: center;
+	display: inline-block;
 	}
 .corp{
-	padding:  30px;
-	height: 70vh;
-	border-radius: 8px;
-	top : 20vh;
 	z-index : 2;}
 label{
 	font-size: 0.7em;
 	}
 .info{
-	position : relative
-;
+	width: 90vw;
 	text-decoration-line : overline underline;
-	margin : 30px;
-	left : -300px;
 	}
 </style>
 <div class="row">
  <div class="col-md-8">
   <h1>MémoireSelective.center</h1>
-  <a href="" class="info">--------------------------------------------------+infos-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</a>
+  <a href="/page.html" class="info">--------------------------------------------------+infos------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</a>
   <div class="corp">
   {% for article in articles %}
   
