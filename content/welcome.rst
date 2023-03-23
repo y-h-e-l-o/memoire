@@ -7,11 +7,17 @@ wilkommen welcome bienvenue
 :author: yHel0
 :summary: Welcome document
 
+Hello
 
 
-Pour commencer on va dire que je suis deux chemin principaux: le premier de recherche et de definition des termes, 
+Pour commencer je suis deux chemin principaux: le premier de definition des termes, 
 par exemple low tech, résilience, brutalisme, artisanat, craftweb.
+les moyens radicaux de faire du contenu web
 
-et l'autre l'archivage par la description de site qui a mon avis rentre dans ce cadre la.
+le luxe communal
+le superflu
+le décoratif
+
+et l'autre l'archivage par la description de sites.
 
 
