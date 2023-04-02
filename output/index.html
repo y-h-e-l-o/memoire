@@ -3,31 +3,30 @@
 <head>
 <meta charset="UTF-8">
  <title>webmemo</title>
- <!--<link rel="stylesheet"  href = "/theme/css/main.css">-->
+ <!--<link rel="stylesheet"  href = "/static/css/main.css">-->
 </head>
 <body>
 	<style>body {
 background-color:#9773B3;
 padding: 0em 3em 0em 1em;
-}
-footer {
-font-family: cursive;
-color:black;
-position: fixed;
-text-align : center;
-left: 50vw;
-bottom: 1px;
+overflow-x: hidden;
 }
 </style>
  <div class="container">
-<style>h1{
-	position: relative;
-	color : #800080;
-	font-family : cursive;
-	font-size: 2em;
-	text-align: center;
-	margin: 20px 0 0 0 ;
-}
+<style>
+ header h1{
+ font-size: 1.5em;
+ color:darkmagenta;
+ text-align: center;
+ font-family: cursive;
+   margin: 0px;
+ }
+ header p{
+ position: relative;
+   font-size: 1em;
+   margin-left: -200px; 
+
+ }
 .article, a{
 	padding: 10px;
 	font-family : Verdana, Verdana, Geneva, sans-serif;
@@ -35,15 +34,25 @@ bottom: 1px;
 	color: black;
 	text-align: center;
 	display: inline-block;
+	border: solid black 1px;
+	border-radius: 38px;
 	}
 label{
 	font-size: 0.7em;
-	border: solid 1px black;
 	}
 .info{
 	width: 90vw;
-	text-decoration-line : overline underline;
 	}
+	
+footer p{
+position: fixed;
+ font-size: 1.5em;
+ color:darkmagenta;
+ text-align: center;
+ font-family: cursive;
+ margin: 0px;
+ bottom : 0.3em;
+ }
 @media screen and (max-width: 1000px) and (min-height:1000px){
 	.article, a{
 		width: 100%;
@@ -65,18 +74,22 @@ label{
 </style>
 <div class="row">
  <div class="col-md-8">
-  <h1>MémoireSelective.center</h1>
-  <a href="/page.html" class="info">--------------------------------------------------+infos------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</a>
+ <header>
+ <h1 >MémoireSelective.center</h1>
+ <p title="Bonjour!
+ Vous êtes actuellement sur un site statique généré grâce a Pelican et hébergé sur Render. Il contient la recherche que je méne pour mon mémoire de master numérique à l'école d'Art et de Design de Saint Etienne!
+ Cette recherche porte sur les liens qui peuvent exister entre conception radicale et esthétique décorative.
+ Bonne Lecture ! " class="info">
+	 -+-+-+-+--+-+-+*-+--+-+-+-+--+-+-+-+-+infos.au.survol-+-+-+-+--+-+-+-+*--+-+-+-+--+-+-+-+--+-+-+-+--+-+-+*-+--+-+-+-+--+-+-+-+--+-+-+-+-*-+-+-+-+--+-+-+-+--+-+-+-+--+-+-*+-+--+-+-+-+--+-+-+-+--+-+-+-+--+-+-+-+--+-+-+-+--+-+-+-+-</p>
+ </header>
   <div class="corp">
-  
    <div class="article"><a href="/quaternumnet.html">quaternum.net</a>
    <label><br>14 mars 2023</label></div>
   <!-- <p><a class="reference external"... -->
-  
    <div class="article"><a href="/alt-text-as-poetrynet.html">alt-text-as-poetry.net</a>
    <label><br>10 mars 2023</label></div>
-  <!-- <p><a class="reference external"... -->
-  
+  <!-- <p>https://alt-text-as-poetry.net/</p>
+<p>Considérant qu'une page web est aussi une image par son... -->
    <div class="article"><a href="/wilkommen-welcome-bienvenue.html">wilkommen welcome bienvenue</a>
    <label><br>01 mars 2023</label></div>
   <!-- <p>Hello</p>
@@ -85,8 +98,5 @@ par... -->
  </div>
 </div>
  </div> 
-<footer>
-	<p>2023</p>
-</footer>
 </body>
 </html>

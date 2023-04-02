@@ -2,28 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
- <title>{% block title %}{% endblock %}</title>
- <!--<link rel="stylesheet"  href = "/theme/css/main.css">-->
+ <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+ <!--<link rel="stylesheet"  href = "/{{ THEME_STATIC_DIR }}/css/main.css">-->
 </head>
 <body>
 	<style>body {
 background-color:#9773B3;
 padding: 0em 3em 0em 1em;
-}
-footer {
-font-family: cursive;
-color:black;
-position: fixed;
-text-align : center;
-left: 50vw;
-bottom: 1px;
+overflow-x: hidden;
 }
 </style>
  <div class="container">
   {% block content %}{% endblock %}
  </div> 
-<footer>
-	<p>2023</p>
-</footer>
 </body>
 </html>

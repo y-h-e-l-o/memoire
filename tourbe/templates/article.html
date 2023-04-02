@@ -1,7 +1,4 @@
 {% extends "base.html" %}
-
-{% block title %}{{ article.title }}{% endblock %}
-
 {% block content %}
 
 <style>
@@ -12,24 +9,26 @@ body{
 .row{
 font-family : Verdana, Verdana, Geneva, sans-serif;}
 p{
-top: 150px;}
+top: 150px;
+max-width: 70vw;
+font-size: 0.9em;
+}
 a{
 	color: black;
 	font-size: 1.5em;
 	font-family: cursive;
 	}
+
 	@media screen and (max-width: 1000px) and (min-height:1000px){
 		.row{
 			font-size: 2em;
 			}
 		}
 </style>
-<div class="row">
- <div class="col-md-8">
+<section class="row">
 <a href="/">Retour</a>
   <h1>{{ article.title }}</h1>
   <label>mise en ligne le {{ article.date|strftime('%d %B %Y') }}</label><p>
   {{ article.content }}</p>
- </div>
-</div>
+ </section>
 {% endblock %}

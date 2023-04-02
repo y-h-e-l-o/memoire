@@ -5,6 +5,7 @@ SITEURL = 'https://github.com/y-h-e-l-o/memoire.github.io.git'
 PATH = 'content'
 
 THEME = './tourbe'
+THEME_STATIC_DIR = 'static'
 GITHUB_ADDRESS = "https://github.com/y-h-e-l-o"
 
 TIMEZONE = 'UTC'
