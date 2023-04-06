@@ -14,34 +14,65 @@ overflow-x: hidden;
 </style>
  <div class="container">
 <style>
- header h1{
+ header h1, h2{
  font-size: 1.5em;
  color:darkmagenta;
- text-align: center;
  font-family: cursive;
-   margin: 0px;
+   display: inline-block;
+ }
+ header h1{
+ position: fixed;
+ top: 500px;
+ left:300px;
+ }
+header  h2{
+ position: fixed;
+ top: 2px;
+ left:1000px;
  }
  header p{
  position: relative;
    font-size: 1em;
    margin-left: -200px; 
+ }
+ a{
+ color: black;}
+ a:hover{
+ color: darkgrey;
+ }
+.categories{
+ position : absolute;
+ right: 0px;
+ top: 10px;
+ display: flex;
+ flex-direction: column;
+ padding: 20px;
+ font-size: 1em;
+ list-style: none;
+ text-align: center;
 
  }
-.article, a{
+ li{
+ padding: 4px;
+  text-decoration: none;}
+ .corp{
+ position: relative;
+ top : 200px;
+ display: flex;
+flex-direction: row;
+
+ }
+.article {
 	padding: 10px;
 	font-family : Verdana, Verdana, Geneva, sans-serif;
-	font-size : 1em;
-	color: black;
-	text-align: center;
-	display: inline-block;
-	border: solid black 1px;
-	border-radius: 38px;
+	font-size : 1em;}
+	.info:hover{
+	cursor: wait;
 	}
+	
 label{
 	font-size: 0.7em;
-	}
-.info{
-	width: 90vw;
+	margin: 10px;
 	}
 	
 footer p{
@@ -51,7 +82,7 @@ position: fixed;
  text-align: center;
  font-family: cursive;
  margin: 0px;
- bottom : 0.3em;
+ bottom : 5em;
  }
 @media screen and (max-width: 1000px) and (min-height:1000px){
 	.article, a{
@@ -60,7 +91,7 @@ position: fixed;
 		text-align: left;
 		display: inline-block;
 	}
-	h1{
+header	h1{
 	font-size: 10em;
 	width : 100vw;
 	right: 10px;
@@ -72,31 +103,46 @@ position: fixed;
 		}
 	}
 </style>
-<div class="row">
- <div class="col-md-8">
  <header>
- <h1 >MémoireSelective.center</h1>
  <p title="Bonjour!
- Vous êtes actuellement sur un site statique généré grâce a Pelican et hébergé sur Render. Il contient la recherche que je méne pour mon mémoire de master numérique à l'école d'Art et de Design de Saint Etienne!
- Cette recherche porte sur les liens qui peuvent exister entre conception radicale et esthétique décorative.
+ Vous êtes actuellement sur un site statique qui contient la recherche que je méne pour mon mémoire de master numérique à l'école d'Art et de Design de Saint Etienne.
+ Cette recherche porte sur les liens qui peuvent exister entre conception radicale et esthétique décorative. Ce site est généré grâce a Pelican et hébergé sur Render.
  Bonne Lecture ! " class="info">
 	 -+-+-+-+--+-+-+*-+--+-+-+-+--+-+-+-+-+infos.au.survol-+-+-+-+--+-+-+-+*--+-+-+-+--+-+-+-+--+-+-+-+--+-+-+*-+--+-+-+-+--+-+-+-+--+-+-+-+-*-+-+-+-+--+-+-+-+--+-+-+-+--+-+-*+-+--+-+-+-+--+-+-+-+--+-+-+-+--+-+-+-+--+-+-+-+--+-+-+-+-</p>
+ <h1 >MémoireSelective.center</h1> <h2>2023</h2>
  </header>
   <div class="corp">
-   <div class="article"><a href="/quaternumnet.html">quaternum.net</a>
-   <label><br>14 mars 2023</label></div>
-  <!-- <p><a class="reference external"... -->
-   <div class="article"><a href="/alt-text-as-poetrynet.html">alt-text-as-poetry.net</a>
-   <label><br>10 mars 2023</label></div>
-  <!-- <p>https://alt-text-as-poetry.net/</p>
-<p>Considérant qu'une page web est aussi une image par son... -->
-   <div class="article"><a href="/wilkommen-welcome-bienvenue.html">wilkommen welcome bienvenue</a>
-   <label><br>01 mars 2023</label></div>
+   <div class="article"><a href="/mourir.html">mourir</a>
+   <label><br>mars 2029</label></div>
   <!-- <p>Hello</p>
-<p>Pour commencer je suis deux chemin principaux: le premier de definition des termes,
+<p>Pour commencer je suis deux chemin principaux: le premier de definition des termes, 
+par... -->
+   <div class="article"><a href="/quaternumnet.html">quaternum.net</a>
+   <label><br>mars 2023</label></div>
+  <!-- <p><a... -->
+   <div class="article"><a href="/alt-text-as-poetrynet.html">alt-text-as-poetry.net</a>
+   <label><br>mars 2023</label></div>
+  <!-- <p><a href="https://alt-text-as-poetry.net/">https://alt-text-as-poetry.net/</a></p>
+<p>Considérant qu'une... -->
+   <div class="article"><a href="/wilkommen-welcome-bienvenue.html">wilkommen welcome bienvenue</a>
+   <label><br>mars 2023</label></div>
+  <!-- <p>Hello</p>
+<p>Pour commencer je suis deux chemin principaux: le premier de definition des termes, 
 par... -->
  </div>
-</div>
+
+<nav>
+    <ul class="categories"><p>Catégories</p>
+        <li>
+            <a href="/category/description.html">Description (2)</a>
+        </li>
+        <li>
+            <a href="/category/lamortauboutduchemin.html">LAMORTAUBOUTDUCHEMIN (1)</a>
+        </li>
+        <li>
+            <a href="/category/tuezmoi.html">tuezmoi (1)</a>
+        </li>
+</nav>
  </div> 
 </body>
 </html>

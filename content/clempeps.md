@@ -1,13 +1,10 @@
-
-quaternum.net
-######################
-
-:date: 14-03-2023 
-:tags: descriptions
-:author: yHel0
+Title: quaternum.net
+Date: 14-03-2023 
+Category: Description
+Author: yHel0
 
 
-https://www.quaternum.net/2021/08/03/refonte-10-lignes-de-css/
+<https://www.quaternum.net/2021/08/03/refonte-10-lignes-de-css/>
 
 Cette page consiste en un fond bleu nuit tendant sur le gris une colonne dont le texte en gris clair est aligné sur la gauche décalé d'environ 50 pixels; sans images.
 
