@@ -1,0 +1,10 @@
+
+<nav>
+    <ul class="categories"><h1 style="font-size: 1.2em;">CATÉGORIES</h1>
+        {% for cat, articles in categories|sort %}
+        <li style="list-style: none;">
+            <a href="/{{cat.url}}" style="font-size: 1.2em; color:black; text-decoration:none;"><span style="color:magenta;">=></span>{{ cat }} (*{{ articles|count }}*)</a>
+        </li>
+        {% endfor %}
+        
+</nav>

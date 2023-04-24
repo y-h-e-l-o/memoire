@@ -1,10 +1,8 @@
-Title: alt-text-as-poetry.net
+Title: ALT TEXT AS POETRY
 Date: 2023-03-10 
-Category: Description
+Category: Descriptions de sites web
 Author: yHel0
-
-
-<https://alt-text-as-poetry.net/>
+Summary: Une page web est aussi une image par son graphisme ...
 
 Considérant qu'une page web est aussi une image par son graphisme une courte description y figure a la fin; je vous la traduit:
 
@@ -17,6 +15,8 @@ Tout le long du site, beaucoup d'autres fleurs sont éparpillées a droite, a ga
 
 
 Ce site a été réalisé par Laurel Schwulst et Taichi Aritomo.
+
+<https://alt-text-as-poetry.net/>
 
 
 

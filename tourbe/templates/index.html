@@ -1,76 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
 <style>
- header h1, h2{
- font-size: 1.5em;
- color:darkmagenta;
- font-family: cursive;
-   display: inline-block;
- }
- header h1{
- position: fixed;
- top: 500px;
- left:300px;
- }
-header  h2{
- position: fixed;
- top: 2px;
- left:1000px;
- }
- header p{
- position: relative;
-   font-size: 1em;
-   margin-left: -200px; 
- }
- a{
- color: black;}
- a:hover{
- color: darkgrey;
- }
-.categories{
- position : absolute;
- right: 0px;
- top: 10px;
- display: flex;
- flex-direction: column;
- padding: 20px;
- font-size: 1em;
- list-style: none;
- text-align: center;
-
- }
- li{
- padding: 4px;
-  text-decoration: none;}
- .corp{
- position: relative;
- top : 200px;
- display: flex;
+.corps{
+width: 95%;
+position: fixed;
+display: flex;
 flex-direction: row;
-
- }
-.article {
-	padding: 10px;
-	font-family : Verdana, Verdana, Geneva, sans-serif;
-	font-size : 1em;}
-	.info:hover{
-	cursor: wait;
+justify-content: space-between;
+margin: auto;
+}
+.intro{
+	max-width: 40vw;
 	}
-	
-label{
-	font-size: 0.7em;
-	margin: 10px;
-	}
-	
-footer p{
+.nom, .date{
 position: fixed;
  font-size: 1.5em;
  color:darkmagenta;
- text-align: center;
  font-family: cursive;
- margin: 0px;
- bottom : 5em;
  }
+.nom{
+ top: 90vh;
+ left:30vw;
+ }
+.date{
+ top: 2px;
+ left:90vw;
+ }
+ a:hover{
+ color: black;}
+ a{
+ color: darkmagenta;
+ }
+
+
+
 @media screen and (max-width: 1000px) and (min-height:1000px){
 	.article, a{
 		width: 100%;
@@ -90,30 +53,24 @@ header	h1{
 		}
 	}
 </style>
- <header>
- <p title="Bonjour!
- Vous êtes actuellement sur un site statique qui contient la recherche que je méne pour mon mémoire de master numérique à l'école d'Art et de Design de Saint Etienne.
- Cette recherche porte sur les liens qui peuvent exister entre conception radicale et esthétique décorative. Ce site est généré grâce a Pelican et hébergé sur Render.
- Bonne Lecture ! " class="info">
-	 -+-+-+-+--+-+-+*-+--+-+-+-+--+-+-+-+-+infos.au.survol-+-+-+-+--+-+-+-+*--+-+-+-+--+-+-+-+--+-+-+-+--+-+-+*-+--+-+-+-+--+-+-+-+--+-+-+-+-*-+-+-+-+--+-+-+-+--+-+-+-+--+-+-*+-+--+-+-+-+--+-+-+-+--+-+-+-+--+-+-+-+--+-+-+-+--+-+-+-+-</p>
- <h1 >MémoireSelective.center</h1> <h2>2023</h2>
- </header>
-  <div class="corp">
-  {% for article in articles %}
-   <div class="article"><a href="/{{ article.slug }}.html">{{ article.title }}</a>
-   <label><br>{{ article.date|strftime('%B %Y') }}</label></div>
-  <!-- {{ article.content|truncate(110) }} -->
-  {% else %}
-   No posts yet!
-  {% endfor %}
+<header>
+<h1 class="nom"> <a href="/">MémoireSelective.center</a></h1> 
+<h2 class="date">2023</h2>
+</header>
+<div class="corps">
+ <p class="intro">
+ <span style="color:red;">=></span>Vous êtes actuellement sur un site statique qui contient ma recherche de mémoire en master numérique à l'école d'Art et de Design de Saint Etienne.<br>
+ Les articles portent sur les liens entre conceptions radicales et esthétiques décoratives.<br> Ce site est généré grâce a Pelican et hébergé sur Render.<br>
+ ++ yhel0.
+</p>
+ <div class="navv">
+ {% include 'elements/nav.part.html'%}
  </div>
+ </div>
+{% block liste %}{% endblock %}
 
-<nav>
-    <ul class="categories"><p>Catégories</p>
-        {% for cat, articles in categories|sort %}
-        <li>
-            <a href="/{{ cat.url }}">{{ cat }} ({{ articles|count }})</a>
-        </li>
-        {% endfor %}</nav>
+
 {% endblock %}
+
+
 

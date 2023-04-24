@@ -1,10 +1,8 @@
-Title: quaternum.net
+Title: QUATERNUM
 Date: 14-03-2023 
-Category: Description
+Category: Descriptions de sites web
 Author: yHel0
-
-
-<https://www.quaternum.net/2021/08/03/refonte-10-lignes-de-css/>
+Summary: Cette page consiste en un fond bleu nuit tendant sur le gris ...
 
 Cette page consiste en un fond bleu nuit tendant sur le gris une colonne dont le texte en gris clair est aligné sur la gauche décalé d'environ 50 pixels; sans images.
 
@@ -22,5 +20,7 @@ Le bord haut droit de la colonne aligné avec la premiére ligne contient un sym
 La seule typographie utilisée se nomme "Tabular", c'est une variation entre une typographie machine et une ordinateur. 
 
 Par la simplicité de sa construction l'ensemble réagis sans changement a la réduction de l'espace de visionnage. 
+
+<https://www.quaternum.net/2021/08/03/refonte-10-lignes-de-css/>
 
 

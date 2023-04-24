@@ -1,0 +1,13 @@
+<!--{% extends "base.html" %}
+{% block content %}
+
+  <div class="corp">
+  {% for article in articles %}
+   <div class="article"><a href="/{{ article.slug }}.html">{{ article.title }}</a>
+   <label><br>{{ article.date|strftime('%B %Y') }}</label></div>
+	<!--{{ article.content|truncate(110) }}-->
+	<!--{% else %}
+   No posts yet!
+  {% endfor %}
+ </div>
+{% endblock %}
