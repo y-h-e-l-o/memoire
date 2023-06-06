@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 <style>
+.bodddy{
+z-index: 2;
+		}
 .corps{
 width: 95%;
 position: fixed;
@@ -11,6 +14,7 @@ margin: auto;
 }
 .intro{
 	max-width: 40vw;
+	position: relative;
 	}
 .nom, .date{
 position: fixed;
@@ -31,9 +35,16 @@ position: fixed;
  a{
  color: darkmagenta;
  }
-
-
-
+/*
+.dessus{
+transition: opacity, z-index, 3s linear 1s;
+	}
+.dessus:visited{
+opacity: 0;
+z-index: 0;
+}
+*/
+	
 @media screen and (max-width: 1000px) and (min-height:1000px){
 	.article, a{
 		width: 100%;
@@ -54,12 +65,14 @@ header	h1{
 	}
 </style>
 <header>
+<!--<a href="#" class="dessus" style="font-size: 30em; position:absolute; color:yellow; z-index: 10;">****  *<br>***<br>    ***  </a>-->
+<div class="bodddy">
 <h1 class="nom"> <a href="/">MémoireSelective.center</a></h1> 
 <h2 class="date">2023</h2>
 </header>
 <div class="corps">
  <p class="intro">
- <span style="color:red;">=></span>Vous êtes actuellement sur un site statique qui contient ma recherche de mémoire en master numérique à l'école d'Art et de Design de Saint Etienne.<br>
+Ceci est un site statique qui contient ma recherche de mémoire en master numérique à l'école d'Art et de Design de Saint Etienne.<br>
  Les articles portent sur les liens entre conceptions radicales et esthétiques décoratives.<br> Ce site est généré grâce a Pelican et hébergé sur Render.<br>
  ++ yhel0.
 </p>
@@ -71,6 +84,6 @@ header	h1{
 
 
 {% endblock %}
-
+</div>
 
 

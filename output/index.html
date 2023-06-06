@@ -10,10 +10,14 @@
 background: #CBBDD9;
 padding: 0em 3em 0em 1em;
 overflow-x: hidden;
+position: relative;
 }
-</style>
+</style> 
  <div class="container">
 <style>
+.bodddy{
+z-index: 2;
+		}
 .corps{
 width: 95%;
 position: fixed;
@@ -24,6 +28,7 @@ margin: auto;
 }
 .intro{
 	max-width: 40vw;
+	position: relative;
 	}
 .nom, .date{
 position: fixed;
@@ -44,9 +49,16 @@ position: fixed;
  a{
  color: darkmagenta;
  }
-
-
-
+/*
+.dessus{
+transition: opacity, z-index, 3s linear 1s;
+	}
+.dessus:visited{
+opacity: 0;
+z-index: 0;
+}
+*/
+	
 @media screen and (max-width: 1000px) and (min-height:1000px){
 	.article, a{
 		width: 100%;
@@ -67,27 +79,35 @@ header	h1{
 	}
 </style>
 <header>
+<!--<a href="#" class="dessus" style="font-size: 30em; position:absolute; color:yellow; z-index: 10;">****  *<br>***<br>    ***  </a>-->
+<div class="bodddy">
 <h1 class="nom"> <a href="/">MémoireSelective.center</a></h1> 
 <h2 class="date">2023</h2>
 </header>
 <div class="corps">
  <p class="intro">
- <span style="color:red;">=></span>Vous êtes actuellement sur un site statique qui contient ma recherche de mémoire en master numérique à l'école d'Art et de Design de Saint Etienne.<br>
+Ceci est un site statique qui contient ma recherche de mémoire en master numérique à l'école d'Art et de Design de Saint Etienne.<br>
  Les articles portent sur les liens entre conceptions radicales et esthétiques décoratives.<br> Ce site est généré grâce a Pelican et hébergé sur Render.<br>
  ++ yhel0.
 </p>
  <div class="navv">
 
 <nav>
-    <ul class="categories"><h1 style="font-size: 1.2em;">CATÉGORIES</h1>
+    <ul class="categories">
         <li style="list-style: none;">
-            <a href="/category/a-lire-au-debut.html" style="font-size: 1.2em; color:black; text-decoration:none;"><span style="color:magenta;">=></span>A lire au début ! (*1*)</a>
+            <a href="/category/a-lire-au-debut.html" style="font-size: 1.2em; color:black; text-decoration:none;"><span style="color:magenta;">=></span>A lire au début! (*1*)</a>
         </li>
         <li style="list-style: none;">
             <a href="/category/definitions.html" style="font-size: 1.2em; color:black; text-decoration:none;"><span style="color:magenta;">=></span>Définitions (*1*)</a>
         </li>
         <li style="list-style: none;">
             <a href="/category/descriptions-de-sites-web.html" style="font-size: 1.2em; color:black; text-decoration:none;"><span style="color:magenta;">=></span>Descriptions de sites web (*2*)</a>
+        </li>
+        <li style="list-style: none;">
+            <a href="/category/notes-autonomes.html" style="font-size: 1.2em; color:black; text-decoration:none;"><span style="color:magenta;">=></span>Notes autonomes (*1*)</a>
+        </li>
+        <li style="list-style: none;">
+            <a href="/category/traduction.html" style="font-size: 1.2em; color:black; text-decoration:none;"><span style="color:magenta;">=></span>Traduction (*2*)</a>
         </li>
         
 </nav> </div>
