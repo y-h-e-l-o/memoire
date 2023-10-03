@@ -1,5 +1,5 @@
 AUTHOR = 'yhel0'
-SITENAME = 'webmemo'
+SITENAME = ' Web-éco-ornement'
 SITEURL = 'https://github.com/y-h-e-l-o/memoire.github.io.git'
 
 PATH = 'content'

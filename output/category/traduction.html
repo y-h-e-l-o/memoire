@@ -1,64 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="shortcut icon" type="image/png" href="../static/images/favicon2.png">
 <meta charset="UTF-8">
- <title>webmemo</title>
+ <title> Web-éco-ornement</title>
  <!--<link rel="stylesheet"  href = "/static/css/main.css">-->
 </head>
 <body>
-	<style>body {
-background: #CBBDD9;
-padding: 0em 3em 0em 1em;
-overflow-x: hidden;
-position: relative;
+	<style>
+	@font-face{
+	font-family:'amiamie';
+	src: url('../static/typo/Amiamie-RegularRound.woff') format('woff');
+	}
+	body {
+background: #ECECEA;
 }
+*{font-family: 'amiamie';font-size: 14pt;}
+
 </style> 
+<h1 class="hello" style="background-color: rgb(194, 193, 90); width: 10vw; margin-bottom: 0px;"> Web-éco-ornement</h1>
  <div class="container">
 <style>
+
 .bodddy{
 z-index: 2;
-		}
-.corps{
-width: 95%;
-position: fixed;
+min-height: 100vh;
 display: flex;
 flex-direction: row;
-justify-content: space-between;
-margin: auto;
+margin: 5px;
+		}
+.corps{
+width: 60%;
+position: relative;
+display: flex;
+flex-direction: column;
+padding-top: 0px;
+flex-grow: 1;
 }
-.intro{
-	max-width: 40vw;
-	position: relative;
+.outro{
+z-index: 3;
+position: relative;
+font-size: 12pt;
+padding: 0  0  0 2.5%;
+background:#ECECEA;
+width: 100vw;
+text-align: center;
+margin-left: -50px;
 	}
-.nom, .date{
-position: fixed;
+.date{
+position: absolute;
  font-size: 1.5em;
  color:darkmagenta;
  font-family: cursive;
- }
-.nom{
- top: 90vh;
- left:30vw;
- }
-.date{
- top: 2px;
+ top: 30%;
  left:90vw;
  }
  a:hover{
  color: black;}
  a{
- color: darkmagenta;
+ color: #5F0083;
+ text-decoration: none;
  }
-/*
-.dessus{
-transition: opacity, z-index, 3s linear 1s;
-	}
-.dessus:visited{
-opacity: 0;
-z-index: 0;
+li{
+ color: black;
+ }
+ul:hover{
+color: darkmagenta;
 }
-*/
-	
+.listeliste{
+width: 40%;
+margin-top: 10px;
+overflow: scroll;
+}
+.nav-ressources{
+width: 2000px;
+max-width: 20vw;
+display: flex;
+flex-direction: column;
+}
+.nav-ressources a{
+margin-top: 5px;
+}
+.liens{
+flex-grow: 2;
+margin-top: 10px;
+}
+
 @media screen and (max-width: 1000px) and (min-height:1000px){
 	.article, a{
 		width: 100%;
@@ -78,57 +105,58 @@ header	h1{
 		}
 	}
 </style>
-<header>
-<!--<a href="#" class="dessus" style="font-size: 30em; position:absolute; color:yellow; z-index: 10;">****  *<br>***<br>    ***  </a>-->
 <div class="bodddy">
-<h1 class="nom"> <a href="/">MémoireSelective.center</a></h1> 
 <h2 class="date">2023</h2>
-</header>
 <div class="corps">
- <p class="intro">
-Ceci est un site statique qui contient ma recherche de mémoire en master numérique à l'école d'Art et de Design de Saint Etienne.<br>
- Les articles portent sur les liens entre conceptions radicales et esthétiques décoratives.<br> Ce site est généré grâce a Pelican et hébergé sur Render.<br>
- ++ yhel0.
-</p>
  <div class="navv">
 
 <nav>
-    <ul class="categories">
-        <li style="list-style: none;">
-            <a href="/category/a-lire-au-debut.html" style="font-size: 1.2em; color:black; text-decoration:none;"><span style="color:magenta;">=></span>A lire au début! (*1*)</a>
-        </li>
-        <li style="list-style: none;">
-            <a href="/category/definitions.html" style="font-size: 1.2em; color:black; text-decoration:none;"><span style="color:magenta;">=></span>Définitions (*1*)</a>
-        </li>
-        <li style="list-style: none;">
-            <a href="/category/descriptions-de-sites-web.html" style="font-size: 1.2em; color:black; text-decoration:none;"><span style="color:magenta;">=></span>Descriptions de sites web (*2*)</a>
-        </li>
-        <li style="list-style: none;">
-            <a href="/category/notes-autonomes.html" style="font-size: 1.2em; color:black; text-decoration:none;"><span style="color:magenta;">=></span>Notes autonomes (*1*)</a>
-        </li>
-        <li style="list-style: none;">
-            <a href="/category/traduction.html" style="font-size: 1.2em; color:black; text-decoration:none;"><span style="color:magenta;">=></span>Traduction (*2*)</a>
-        </li>
-        
+<style>.navigation{display: flex; flex-direction: row;}</style>
+
+
+        <div class="navigation">
+            <a href="/category/notes.html" style="font-size: 14pt; text-decoration:none; padding-right: 50px; margin-top: 10px;"><span style="color:white;font-size: 8pt;">♦    </span>Notes ≺3⊱</a>
+            <a href="/category/traduction.html" style="font-size: 14pt; text-decoration:none; padding-right: 50px; margin-top: 10px;"><span style="color:white;font-size: 8pt;">♦    </span>Traduction ≺1⊱</a>
+            <a href="/category/traductions-en-chantier.html" style="font-size: 14pt; text-decoration:none; padding-right: 50px; margin-top: 10px;"><span style="color:white;font-size: 8pt;">♦    </span>Traductions en chantier ≺2⊱</a>
+        </div>
+
+
+
 </nav> </div>
- </div>
-<div class="extrait-liste" style="display:flex; flex-direction:column; top: 30vh; position: relative; background-color:#CBBDD9;">
+ <div class="listeliste">
+
+<div class="extrait-liste" style="display:flex; flex-wrap:wrap; flex-direction: column;"  >
 	
-
-<h1 style="font-size: 1.6em; margin: 0px;">Traduction</h1>
-
-<h2 class="list-element-title" style="font-size: 1.3em; margin: 0px;">
-	<a href='/traduction-dun-article-de-laurel-schwulst-partie-2.html' class="titles" style="margin: 0px;"><span style="color:red;">=></span>Traduction d'un article de Laurel Schwulst (Partie 2)</a>
+<div class="summary" style="margin: 20px 0px 0 50px; max-width: 400px;">
+<h2 class="list-element-title" style="font-size: 12pt; margin: 0px;">
+	<a href='/les-principes-du-permacomputing.html' class="titles" style="margin: 0px;"><span style="color:white; font-size:16pt;">♦    </span>Les principes du permacomputing</a>
 </h2>
-<p style=" margin: 0px; font-size: 0.4em;"><p>Pour le meilleur ou pour le pire, c'est plus compliqué de supprimer un batiment qu'un site internet.</p></p>
+<p>Prendre soin du vivant. S'interesser au vivant. Se soucier du vivant.Se soucier des puces electroniques.Rester petit.Espérer le meilleur, se préparer au pire...</p>
+</div>
+</div>
+</div>
+ </div>
+<div class="liens">
+<details class="nav-ressources">
+<summary><a>Liens</a></summary>
+<a href="https://alt-text-as-poetry.net/"> AltTextAsPoetry </a>
+<a href="https://html.energy/index.html"> HTML-ENERGY</a>
+<a href="https://solar.lowtechmagazine.com/fr/2018/09/how-to-build-a-low-tech-website/"> LOW←TECH MAGAZINE / Low-tech website </a>
+<a href="https://permacomputing.net"> Permacomputing </a>
+ <!--<a href="https://designcommun.fr/cahiers/situer-le-numerique/">"Situer le numérique" par Gauthier Roussilhe</a>-->
+ <a href="http://viznut.fi/unscii/">UNSCII par Viznut</a>
+ <a href="https://typotheque.genderfluid.space/quni.html"> Typothéque ByeByeBinary </a>
 
-<h2 class="list-element-title" style="font-size: 1.3em; margin: 0px;">
-	<a href='/traduction-dun-article-de-laurel-schwulst-partie-1.html' class="titles" style="margin: 0px;"><span style="color:red;">=></span>Traduction d'un article de Laurel Schwulst (Partie 1)</a>
-</h2>
-<p style=" margin: 0px; font-size: 0.4em;"><p>Qu'est ce qu'un site internet ?</p></p>
+
+</details></div>
 </div>
 
-
- </div> 
+<footer>
+<p id="info" class="outro">
+ Les articles portent sur les liens entre low-tech et ornement.
+ Ceci est un site statique / mémoire de master Création Numérique (Ecole d'Art et de Design de Saint Etienne)/<br> généré grâce a Pelican et hébergé sur Render / Typographie utilisée <a href="https://typotheque.genderfluid.space/amiamie-rounded.html" style=" font-size : 12pt;"> Amiamie Round  par Mirat Masson</a> .
+ ++ <a href="//www.heloisedebrand.fr">yhl</a>.
+</p>
+</footer> </div> 
 </body>
 </html>

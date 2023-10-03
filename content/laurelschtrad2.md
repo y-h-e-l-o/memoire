@@ -1,8 +1,8 @@
-Title: Traduction d'un article de Laurel Schwulst (Partie 2)
+Title: "My website is a shifting house next to a river of knowledge" (pt2)
 Date: 2023-05-12 
-Category: Traduction
+Category: Traductions en chantier
 Author: yHel0
-Summary: Pour le meilleur ou pour le pire, c'est plus compliqué de supprimer un batiment qu'un site internet.
+Summary: "Pour le meilleur ou pour le pire, c'est plus compliqué de supprimer un batiment qu'un site internet."
 
 
 UN SITE INTERNET COMME UN PIECE

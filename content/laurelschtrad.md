@@ -1,9 +1,10 @@
-Title: Traduction d'un article de Laurel Schwulst (Partie 1)
-Date: 2023-05-10 
-Category: Traduction
+Title:"My website is a shifting house next to a river of knowledge" (pt1)
+Date: 2023-05-13
+Category: Traductions en chantier
 Author: yHel0
-Summary: Qu'est ce qu'un site internet ?
+Summary: "Laurel Schwulst (n.1988) est une artiste, écrivaine, et technologue." Cet essai a été publié sur le site TheCreativeIndependant en 2018.
 
+<https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/>
 
 
 Qu'est ce qu'un site internet ?

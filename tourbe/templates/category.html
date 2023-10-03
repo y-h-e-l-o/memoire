@@ -1,16 +1,16 @@
 {% extends "index.html"%}
 
 {% block liste %}
-<div class="extrait-liste" style="display:flex; flex-direction:column; top: 30vh; position: relative; background-color:#CBBDD9;">
+
+<div class="extrait-liste" style="display:flex; flex-wrap:wrap; flex-direction: column;"  >
 	
-
-<h1 style="font-size: 1.6em; margin: 0px;">{{category}}</h1>
 {% for article in articles %}
-
-<h2 class="list-element-title" style="font-size: 1.3em; margin: 0px;">
-	<a href='/{{ article.url }}' class="titles" style="margin: 0px;"><span style="color:red;">=></span>{{ article.title }}</a>
+<div class="summary" style="margin: 20px 0px 0 50px; max-width: 400px;">
+<h2 class="list-element-title" style="font-size: 12pt; margin: 0px;">
+	<a href='/{{ article.url }}' class="titles" style="margin: 0px;"><span style="color:white; font-size:16pt;">♦    </span>{{ article.title }}</a>
 </h2>
-<p style=" margin: 0px; font-size: 0.4em;">{{ article.summary}}</p>
+{{ article.summary}}
+</div>
 {% endfor %}
 </div>
 {% endblock %}

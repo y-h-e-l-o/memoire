@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="shortcut icon" type="image/png" href="../static/images/favicon2.png">
 <meta charset="UTF-8">
  <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
  <!--<link rel="stylesheet"  href = "/{{ THEME_STATIC_DIR }}/css/main.css">-->
 </head>
 <body>
-	<style>body {
-background: #CBBDD9;
-padding: 0em 3em 0em 1em;
-overflow-x: hidden;
-position: relative;
+	<style>
+	@font-face{
+	font-family:'amiamie';
+	src: url('../static/typo/Amiamie-RegularRound.woff') format('woff');
+	}
+	body {
+background: #ECECEA;
 }
+*{font-family: 'amiamie';font-size: 14pt;}
+
 </style> 
+<h1 class="hello" style="background-color: rgb(194, 193, 90); width: 10vw; margin-bottom: 0px;"> Web-éco-ornement</h1>
  <div class="container">
   {% block content %}{% endblock %}
  </div> 

@@ -1,50 +1,73 @@
 {% extends "base.html" %}
 {% block content %}
 <style>
+
 .bodddy{
 z-index: 2;
-		}
-.corps{
-width: 95%;
-position: fixed;
+min-height: 100vh;
 display: flex;
 flex-direction: row;
-justify-content: space-between;
-margin: auto;
+margin: 5px;
+		}
+.corps{
+width: 60%;
+position: relative;
+display: flex;
+flex-direction: column;
+padding-top: 0px;
+flex-grow: 1;
 }
-.intro{
-	max-width: 40vw;
-	position: relative;
+.outro{
+z-index: 3;
+position: relative;
+font-size: 12pt;
+padding: 0  0  0 2.5%;
+background:#ECECEA;
+width: 100vw;
+text-align: center;
+margin-left: -50px;
 	}
-.nom, .date{
-position: fixed;
+.date{
+position: absolute;
  font-size: 1.5em;
  color:darkmagenta;
  font-family: cursive;
- }
-.nom{
- top: 90vh;
- left:30vw;
- }
-.date{
- top: 2px;
+ top: 30%;
  left:90vw;
  }
  a:hover{
  color: black;}
  a{
- color: darkmagenta;
+ color: #5F0083;
+ text-decoration: none;
  }
-/*
-.dessus{
-transition: opacity, z-index, 3s linear 1s;
-	}
-.dessus:visited{
-opacity: 0;
-z-index: 0;
+li{
+ color: black;
+ }
+ul:hover{
+color: darkmagenta;
 }
-*/
-	
+.listeliste{
+width: 40%;
+margin-top: 10px;
+overflow: scroll;
+}
+.nav-ressources{
+width: 2000px;
+max-width: 20vw;
+display: flex;
+flex-direction: column;
+}
+.nav-ressources a{
+margin-top: 5px;
+}
+.liens{
+flex-grow: 2;
+margin-top: 15px;
+}
+summary{
+padding-bottom: 28px;
+}
 @media screen and (max-width: 1000px) and (min-height:1000px){
 	.article, a{
 		width: 100%;
@@ -64,26 +87,22 @@ header	h1{
 		}
 	}
 </style>
-<header>
-<!--<a href="#" class="dessus" style="font-size: 30em; position:absolute; color:yellow; z-index: 10;">****  *<br>***<br>    ***  </a>-->
 <div class="bodddy">
-<h1 class="nom"> <a href="/">MémoireSelective.center</a></h1> 
 <h2 class="date">2023</h2>
-</header>
 <div class="corps">
- <p class="intro">
-Ceci est un site statique qui contient ma recherche de mémoire en master numérique à l'école d'Art et de Design de Saint Etienne.<br>
- Les articles portent sur les liens entre conceptions radicales et esthétiques décoratives.<br> Ce site est généré grâce a Pelican et hébergé sur Render.<br>
- ++ yhel0.
-</p>
  <div class="navv">
  {% include 'elements/nav.part.html'%}
  </div>
- </div>
+ <div class="listeliste">
 {% block liste %}{% endblock %}
-
-
-{% endblock %}
 </div>
+ </div>
+ {% include 'elements/nav2.part.html'%}
+</div>
+</div>
+{% include 'elements/footer.part.html' %}
+{% endblock %}
+
+
 
 

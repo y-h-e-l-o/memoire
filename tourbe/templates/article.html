@@ -3,32 +3,67 @@
 
 <style>
 body{
-	background:#D0C6D8;
-	overflow: scroll;
+	background:#F9FFF4;
+	overflow-x: scroll;
 	}
 .row{
-font-family : Verdana, Verdana, Geneva, sans-serif;}
-p{
-top: 150px;
-max-width: 70vw;
-font-size: 0.9em;
+font-family : Verdana, Verdana, Geneva, sans-serif;
+margin:auto;
+
 }
-a{
+.content{
+top: 150px;
+font-size: 0.9em;
+font-weight: normal;
+margin-left: 15%;
+width: 500px;
+}
+p{
+line-height: 30px;
+word-break: normal;
+}
+label{
+padding-top: -10px;
+font-size: 14px;
+}
+.back{
 	color: black;
-	font-size: 1.5em;
-	font-family: cursive;
+	font-size: 14pt;
+	text-decoration: none;
+	color: darkmagenta;
 	}
+.back:hover{
+color: black;
+}
+.espace{
+height: 300px;
+position: relative;
+width: 100%;
+}
 
 	@media screen and (max-width: 1000px) and (min-height:1000px){
 		.row{
 			font-size: 2em;
 			}
 		}
+/*faire un bouton pour continuer la lecture comme un livre sans scroll
+.button{
+position: absolute;
+top: 90vh;
+left:90vw;
+}
+#suite1{
+position: absolute;
+top: 90vh;
+left: 210vw;
+}*/
 </style>
 <section class="row">
-<a href="/">Retour</a>
-  <h1>{{ article.title }}</h1>
-  <label>mise en ligne le {{ article.date|strftime('%d %B %Y') }}</label><p>
-  {{ article.content }}</p>
+<a href="/" class="back">Retour</a>
+  <h1 style="margin-bottom:0px;padding-bottom:0px;">{{ article.title }}</h1>
+  <label>mise en ligne le {{ article.date|strftime('%d %B %Y') }}</label>
+  <div class="content"><p >{{ article.content }}</p></div>
+ <!-- <a href="#suite1" class="button">suite </a>
+  <div id="suite1"></div>-->
  </section>
 {% endblock %}
