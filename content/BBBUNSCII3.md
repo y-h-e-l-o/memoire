@@ -2,7 +2,7 @@ Title: BBB et UNSCII
 Date: 2023-10-2 
 Category: Notes
 Author: yHel0
-Summary: en réalité j'suis tombée sur le forum de 16colo.rs parce que je digguais le site de viznut
+Summary: Les explorations de l'Unicode par le QUNI et l'UNSCII, deux pratiques de la marge.
 
 en réalité j'suis tombée sur le forum de 16colo.rs parce que je digguais le site de *viznut*<br>
 et qu'il a crée une font basée sur l'unicode qui intégre des caractéres utiles pour faire des objets graphiques a base de texte.

@@ -14,6 +14,7 @@ display:flex;
 background: rgb(247,247,247);
 background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 77%, rgba(188,255,219,1) 84%, rgba(146,255,196,1) 87%, rgba(125,255,185,1) 89%, rgba(104,255,174,1) 91%, rgba(73,255,157,1) 93%, rgba(63,255,151,1) 95%, rgba(42,255,140,1) 98%, rgba(0,255,117,1) 100%);
 }
+.navigation{display: flex; flex-direction: column;}
 .left-part{
 position:relative;
 flex-basis: 20%;
@@ -54,20 +55,43 @@ margin: 20px 0 20px 0;
 a:hover{
 color: red;
 }
-	html{
-overflow: hidden;}
+@media screen and (max-width: 1280px) and (min-height:1000px){
+body{
+flex-direction: column;
+}
+.left-part{
+flex-direction:row;
+flex-basis: 100%;
+min-height: 20vh;
+}
+.left-nav-bar{display:flex;flex-direction:row;}
+
+.center-part{
+font-size: 2.6rem;
+grid-template-rows: repeat(50, 600px);
+grid-gap: 10px;
+grid-auto-flow: column;
+grid-auto-columns: 900px 900px;
+}
+.summary{
+width: 80%;}
+.navigation {
+display:flex;
+flex-direction: row;
+}
+.hello{
+font-size: 2rem;
+flex: 1;
+}
+}
 </style>
 <!--<h3 class="date">2023</h3>-->
 <div class="left-part">
 <div class="left-nav-bar">
  <a href="/" class="hello" ><h1 style="background-color: rgb(194, 193, 90)"> Web-éco-ornement</h1></a>
-
 <nav>
-<style>.navigation{display: flex; flex-direction: column;}</style>
-
-
-        <div class="navigation">
-           <h1> <a href="/category/notes.html"><span>♦    </span>Notes ≺3⊱</a> </h1>
+<div class="navigation">
+           <h1> <a href="/category/notes.html"><span>♦    </span>Notes ≺4⊱</a> </h1>
            <h1> <a href="/category/traductions.html"><span>♦    </span>Traductions ≺3⊱</a> </h1>
         </div>
 
@@ -83,6 +107,10 @@ overflow: hidden;}
  <!--<a href="https://designcommun.fr/cahiers/situer-le-numerique/">"Situer le numérique" par Gauthier Roussilhe</a>-->
  <a href="http://viznut.fi/unscii/">UNSCII par Viznut</a>
  <a href="https://typotheque.genderfluid.space/quni.html"> Typothéque ByeByeBinary </a>
+<a href="https://topophile.net/savoir/le-testament-du-vernaculaire/"> Le testament du vernaculaire / Topophile</a>
+<a href="http://www.schoellkopf.fr/new%20site/nouveau%20site/corF/pages/F05.htm"> Habitant·es d'unitées d'habitations/ Schoellkopf </a>
+<a href="https://deuxfleurs.fr/"> Serveur·euse DeuxFleurs </a>
+<a href="https://club1.fr/le-club"> Serveur·euse Club1 </a>
 </details> </div>
 
 <footer>
@@ -98,21 +126,27 @@ overflow: hidden;}
 <!--<div class="articles">-->
 <div class="summary">
 <h4 class="list-element-title">
+	<a href='/vernaculaire-a-firminy.html' class="titles">Vernaculaire à Firminy</a>
+</h4>
+<p>Les photographies de Jean Louis Schoellkopf sont toutes accessibles sur son site personnel. Cette note porte sur celle qu'il a prise dans le batiment du Corbusier a Firminy.</p>
+</div>
+<div class="summary">
+<h4 class="list-element-title">
 	<a href='/bbb-et-unscii.html' class="titles">BBB et UNSCII</a>
 </h4>
-<p>en réalité j'suis tombée sur le forum de 16colo.rs parce que je digguais le site de viznut</p>
+<p>Les explorations de l'Unicode par le QUNI et l'UNSCII, deux pratiques de la marge.</p>
 </div>
 <div class="summary">
 <h4 class="list-element-title">
 	<a href='/lascii-art.html' class="titles">L'ASCII Art</a>
 </h4>
-<p>En continuant dans cette idée du texte comme élément ornemental</p>
+<p>L'ASCII Art d'avant et de maintenant. Pratique graphique trés économe en ressources.</p>
 </div>
 <div class="summary">
 <h4 class="list-element-title">
 	<a href='/les-glyphs-de-comicssansms.html' class="titles">Les Glyphs De ComicsSansMs</a>
 </h4>
-<p>Quand je me demande quelles formes peuvent orner sans être des images ou des gifs, je reviens souvent aux glyphes</p>
+<p>Les Glyphes petits trésors du graphisme. Cette note parle de ceux de la typographie Comic Sans MS.</p>
 </div>
 </div>
 <!--</div>-->

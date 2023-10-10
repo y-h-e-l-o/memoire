@@ -16,7 +16,7 @@ background-color: white;
 }
 .content{
 top: 150px;
-font-size: 1em;
+font-size: 1.2em;
 font-weight: normal;
 margin-left: 15%;
 width: 500px;
@@ -62,11 +62,11 @@ left: 210vw;
 }*/
 </style>
 <section class="row">
-<a href="/" class="back">Retour</a>
   <h1 style="margin-bottom:0px;padding-bottom:0px;">{{ article.title }}</h1>
   <label>mise en ligne le {{ article.date|strftime('%d %B %Y') }}</label>
   <div class="content"><p >{{ article.content }}</p></div>
- <!-- <a href="#suite1" class="button">suite </a>
-  <div id="suite1"></div>-->
+{% for cat, articles in categories|sort %}
+<a href="/{{cat.url}}" class="back">Retour aux {{cat}} </a> <br>
+{% endfor %}
  </section>
 {% endblock %}
