@@ -1,106 +1,103 @@
 {% extends "base.html" %}
 {% block content %}
-<style>
 
-.bodddy{
-z-index: 2;
-min-height: 100vh;
-display: flex;
-flex-direction: row;
-margin: 5px;
-		}
-.corps{
-width: 60%;
-position: relative;
+<style>
+body{
+display:flex;
+background: rgb(247,247,247);
+background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(255,255,255,1) 77%, rgba(188,255,219,1) 84%, rgba(146,255,196,1) 87%, rgba(125,255,185,1) 89%, rgba(104,255,174,1) 91%, rgba(73,255,157,1) 93%, rgba(63,255,151,1) 95%, rgba(42,255,140,1) 98%, rgba(0,255,117,1) 100%);
+}
+.left-part{
+position:relative;
+flex-basis: 20%;
 display: flex;
 flex-direction: column;
-padding-top: 0px;
-flex-grow: 1;
+min-height: 100vh;
 }
-.outro{
-z-index: 3;
+.center-part{
+margin-left: 10px;
+height: 75vh;
 position: relative;
-font-size: 12pt;
-padding: 0  0  0 2.5%;
-background:#ECECEA;
-width: 100vw;
-text-align: center;
-margin-left: -50px;
-	}
-.date{
-position: absolute;
- font-size: 1.5em;
- color:darkmagenta;
- font-family: cursive;
- top: 30%;
- left:90vw;
- }
- a:hover{
- color: black;}
- a{
- color: #5F0083;
- text-decoration: none;
- }
-li{
- color: black;
- }
-ul:hover{
-color: darkmagenta;
+display: grid;
+grid-template-rows: repeat(4, 200px);
+grid-gap: 10px;
+grid-auto-flow: column;
+grid-auto-columns: 300px 100px;
 }
-.listeliste{
-width: 40%;
-margin-top: 10px;
-overflow: scroll;
+.summary{
+width:300px;
+height: 200px;
+}
+.left-nav-bar{
+flex:1;
+}
+.paginator{
+position : relative;
+top: 90vh;
 }
 .nav-ressources{
-width: 2000px;
-max-width: 20vw;
 display: flex;
 flex-direction: column;
 }
-.nav-ressources a{
-margin-top: 5px;
-}
-.liens{
-flex-grow: 2;
-margin-top: 15px;
-}
 summary{
-padding-bottom: 28px;
+font-size: 1.4rem;
+text-decoration: underline;
+margin: 20px 0 20px 0;
 }
-@media screen and (max-width: 1000px) and (min-height:1000px){
-	.article, a{
-		width: 100%;
-		font-size: 2em;
-		text-align: left;
-		display: inline-block;
-	}
-header	h1{
-	font-size: 10em;
-	width : 100vw;
-	right: 10px;
-	margin: 100px;
-	}
-	label{
-		font-size: 1.3em;
-		margin-top : -10px;
-		}
-	}
+a:hover{
+color: red;
+}
+	html{
+overflow: hidden;}
 </style>
-<div class="bodddy">
-<h2 class="date">2023</h2>
-<div class="corps">
- <div class="navv">
+<!--<h3 class="date">2023</h3>-->
+<div class="left-part">
+<div class="left-nav-bar">
+ <a href="/" class="hello" ><h1 style="background-color: rgb(194, 193, 90)"> Web-éco-ornement</h1></a>
  {% include 'elements/nav.part.html'%}
- </div>
- <div class="listeliste">
-{% block liste %}{% endblock %}
-</div>
- </div>
  {% include 'elements/nav2.part.html'%}
+ </div>
+ {% include 'elements/footer.part.html' %}
+ </div>
+
+
+ <div class="center-part">
+<!--<div class="articles">-->
+{% for article in articles_page.object_list %}
+<div class="summary">
+<h4 class="list-element-title">
+	<a href='/{{article.url}}' class="titles">{{ article.title }}</a>
+</h4>
+{{ article.summary}}
 </div>
+{% endfor %}
 </div>
-{% include 'elements/footer.part.html' %}
+<!--</div>-->
+
+{% if articles_paginator.num_pages > 1 %}
+<div class="paginator">
+    {% if articles_previous_page %}
+    {% set num = articles_page.previous_page_number() %}
+    <a href="/{{ page_name }}{{ num if num > 1 else '' }}.html">&lt;</a>
+    {% else %}
+    <span>&lt;</span>
+    {% endif %}
+
+    {% for cpt in articles_paginator.page_range %}
+        {% if cpt == articles_page.number %}
+        <span class="active">{{ cpt }}</span>
+        {% else %}
+        <a href="/{{ page_name }}{{ cpt if cpt > 1 else '' }}.html">{{ cpt }}</a>
+        {% endif %}
+    {% endfor %}
+
+    {% if articles_next_page %}
+    <a href="/{{ page_name }}{{ articles_page.next_page_number() }}.html">&gt;</a>
+    {% else %}
+    <span>&gt;</span>
+    {% endif %}
+</div>
+{% endif %}
 {% endblock %}
 
 

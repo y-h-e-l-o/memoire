@@ -1,11 +1,11 @@
 
 <nav>
-<style>.navigation{display: flex; flex-direction: row;}</style>
+<style>.navigation{display: flex; flex-direction: column;}</style>
 
 
         <div class="navigation">
         {% for cat, articles in categories|sort %}
-            <a href="/{{cat.url}}" style="font-size: 14pt; text-decoration:none; padding-right: 50px; margin-top: 10px;"><span style="color:white;font-size: 8pt;">♦    </span>{{ cat }} ≺{{ articles|count }}⊱</a>
+           <h1> <a href="/{{cat.url}}"><span>♦    </span>{{ cat }} ≺{{ articles|count }}⊱</a> </h1>
             {% endfor %}
         </div>
 

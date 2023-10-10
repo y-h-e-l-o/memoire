@@ -1,6 +1,6 @@
 Title:"My website is a shifting house next to a river of knowledge" (pt1)
 Date: 2023-05-13
-Category: Traductions en chantier
+Category: Traductions
 Author: yHel0
 Summary: "Laurel Schwulst (n.1988) est une artiste, écrivaine, et technologue." Cet essai a été publié sur le site TheCreativeIndependant en 2018.
 

@@ -1,6 +1,6 @@
 Title: Les principes du permacomputing
 Date: 2023-05-27
-Category: Traductions en chantier
+Category: Traductions
 Author: yHel0
 Summary: Prendre soin du vivant. S'interesser au vivant. Se soucier du vivant.Se soucier des puces electroniques.Rester petit.Espérer le meilleur, se préparer au pire...
 

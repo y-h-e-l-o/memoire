@@ -1,21 +1,4 @@
+body{
+    background-color:blue;
 
-body {
-background-color:#E3E9A9;
-padding: 0em 3em 0em 1em;
-font-family : Verdana, Verdana, Geneva, sans-serif;
-}
-
-h1{
-font-size: 3em;
-margin: 20px 0 0 0 ;
-}
-h2{
-margin:  0  0 20px 0 ;
-}
-.article{
-position : relative;
-font-size: 2em;
-color : #D9E27D;
-font-family: monospace;
-z-index: 2;
 }

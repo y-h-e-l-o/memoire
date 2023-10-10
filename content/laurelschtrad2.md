@@ -1,6 +1,6 @@
 Title: "My website is a shifting house next to a river of knowledge" (pt2)
 Date: 2023-05-12 
-Category: Traductions en chantier
+Category: Traductions
 Author: yHel0
 Summary: "Pour le meilleur ou pour le pire, c'est plus compliqué de supprimer un batiment qu'un site internet."
 
