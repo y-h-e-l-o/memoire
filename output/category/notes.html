@@ -24,6 +24,7 @@ min-height: 100vh;
 }
 .center-part{
 margin-left: 10px;
+flex-basis: 40%;
 height: 75vh;
 position: relative;
 display: grid;
@@ -31,6 +32,10 @@ grid-template-rows: repeat(4, 200px);
 grid-gap: 10px;
 grid-auto-flow: column;
 grid-auto-columns: 300px 100px;
+}
+.right-part{
+position: relative;
+flex-basis: 40%;
 }
 .summary{
 width:300px;
@@ -151,5 +156,7 @@ flex: 1;
 </div>
 <!--</div>-->
 
+
+<div class="right-part"><img src="../static/images/map.png" alt="carte du lien entre les traductions et des notes"></div>
 </body>
 </html>
